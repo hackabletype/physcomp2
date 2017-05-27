@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Week 9</title>
-    <meta name="description" content="Interactive Environments 2">
-    <meta name="author" content="Mark Hellar">
+    <title>Physical Computing: 2</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/league.css" id="theme">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
@@ -31,112 +29,126 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <p>The ESP8266</p>
-            </section>
-            <section data-background="img/nodemcu.png">
-            </section>
-            <section>
-                <a href="http://bit.ly/1UDg5Zi">Code</a>
-            </section>
+                <figure>
+                    <h2 class="intro">Physical Computing: 2</h2 class="intro">
+                        <h2 class="intro">Physical Computing: 2</h2 class="intro">
+                        <h2 class="intro">Physical Computing: 2</h2 class="intro">
+                        <h2 class="intro">Physical Computing: 2</h2 class="intro">                  
+                    </figure>
+                </section>
 
-            <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
-            </section>
-            <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
-            </section>
-            <section>
-                <p>The NodeMCU is a mini Arduino with Wifi, that is $10.00!</p>
-                <br>
-            </section>
-            <section>
-                <p>
-                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs serial driver</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next go to the Arduino Preferences
-                    <br><img src="img/ard-pref.png" height="400">
-                    <br> Enter <b>http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> into Additional Boards Manager URLs
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next, use the Board manager to install the ESP8266 package.
-                    <br><img src="img/brdmgr.png" height="400">
-                </p>
-            </section>
-             <section>
-             <img src="img/nodemcu_pins.png">
-            </section>
-            <section>
-                <p>Connect an led</p>
-                <br>
-                <img src="img/mqled.png">
-            </section>
+                <section data-background="img/72-points-mesh.svg" data-background-transition="zoom">
+                    <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/1</b></p>
+                    <br>
+                    <p><b>Grab the code here: <br><a href="http://bit.ly/2eZU35v">http://bit.ly/2eZU35v</a></b></p>
+                </section>
+
+
                 <section>
-                <p>Upload Blink</p>
-                <br>
-            </section>
-            <section>
-                <p>Upload WiFiWebServer</p>
-                <br>
-            </section>
-            <section>
-                <p>Connect some neopixels</p>
-                <br>
-                <img src="img/espixel.png">
-                <br>
-            </section>
+                    <ul>
+                        <h3>Topics for This Week:</h3>
+                         <li class="fragment">Sensors</li>
+                         <li class="fragment">Using a Liquid Crystal Display</li>
+                         <li class="fragment">Deploy a Node App on Heroku</li>
+                    </ul>
+                </section>
+                <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6Q5HPxPYFaw" frameborder="0" allowfullscreen></iframe>
+                </section>
 
-            <section>
-                <br>
-                <img src="img/mqttorg.png">
-                <br>
-            </section>
-            <section>
-                <br>
-                <img src="img/mqtt-explanation.png">
-                <br>
-            </section>
-            <section>
-                <p>brew install mosquitto</p><br>
-                <p>run mosquitto from terminal</p>
+                <section>
+                <img src="img/hc04.jpeg"
+                </section>
+                </section>
+                <section>
+                <p>The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. From 2cm to 400 cm or 1” to 13 feet. It operation is not affected by sunlight or black material like Sharp rangefinders are (although acoustically soft materials like cloth can be difficult to detect). It comes complete with ultrasonic transmitter and receiver module.</p>
+                </section>
+                <section>
+                <img src="img/schematics.png">
+                </section>
+                                <section>
+                <p>Upload the Arduino sketch in hc-04-code/hc-04 and then check the output in the serial monitor</p>
+                </section>
+                <section>
+                <p>Open hc04_p5js in a text editor and the terminal. Change the port. NPM install. Make slight change to Arduino code. Node app.js and open localhost:3000 in your browser</p>
+                </section>
+                                <section>
+                <p>Soldering</p>
+                <img src="img/soldering.jpg">
+                </section>
 
-            </section>
-            <section>
-                <p>Open 2 terminals</p><br>
-                <p>In the first type: mosquitto_sub -h 127.0.0.1 -t topic</p><br>
-                <p>In the second type: mosquitto_pub -h 127.0.0.1 -t topic -m "message"</p><br>
-            </section>
-
-            <section>
-                <p>Public MQTT Server</p><br>
-                <p>In the first type: mosquitto_sub -h ec2-35-161-110-220.us-west-2.compute.amazonaws.com  -t /test</p><br>
-                <p>In the second type: mosquitto_pub -h ec2-35-161-110-220.us-west-2.compute.amazonaws.com -t /test -m "message"</p><br>
-            </section>
-
-            <section>
-                <p>Install Arduino MQTT Library</p><br>
-                <p>Upload mqtt_neopixels</p><br>
-                <p>mosquitto_pub -h ec2-35-161-110-220.us-west-2.compute.amazonaws.com -t /test -m "1"</p><br>
-            </section>
-
-            <section>
-                <p><a href="http://www.blynk.cc/">Blynk</a></p>
-            </section>
+                                                <section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f95i88OSWB4" frameborder="0" allowfullscreen></iframe>
+                </section>
 
 
+                <section>
+                <h3>Let's hook up the Liquid Crystal Display</h3>
+                <img src="img/LCD_Base.png" height="400"><br>
+                <a href="https://www.arduino.cc/en/Tutorial/HelloWorld">Detailed Reference</a>
+                <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                <h3>Unplug your Arduino from USB</h3><br>
+                <h3>Hook up according to the diagram</h3><br>
+                <h3>Call out if you need help!</h3>
+                </section>
+                <section>
+                <h3>Arduino Examples:</h3>
+                </section>
+                <section>                        
+                        <h3>code7/HelloWorld/HelloWorld.ino
+                </section>
+                <section>                        
+                        <h3>code7/Display/Display.ino
+                </section>
+                <section>                        
+                        <h3>code7/SerialDisplay/SerialDisplay.ino
+                </section>
+                <section>                        
+                        <a href="https://www.arduino.cc/en/Reference/LiquidCrystal">Arduino Liquid Crystal Display Library</a>
+                </section>
+                </section>
+                
+                <section>
+                <section>                        
+                        <h3>Johnny Five Examples</h3>
+                        <a href="#" class="navigate-down">
+                        </a>
+                </section>
+                <section>                        
+                        <h3>Upload Firmata to Arduino</h3>
+                </section>
+                <section>                        
+                        <h3>code7/j5_lcd_weather</h3><br>
+                        <h3>node app.js</h3>
+                </section>    
+                <section>                        
+                        <h3>code7/j5_lcd_bart</h3><br>
+                        <h3>node app.js</h3>
+                </section>  
+                </section>  
+            <section>
+                             <section>
+                        <p>Sign up for <a href="https://signup.heroku.com/dc">Heroku</a></p>
+                    </section>
+                    <section>
+                        <p>Download the Heroku CLI <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up"></a></p><br><p class="fragment">Run 'heroku login' from the terminal</p>
+                    </section>
+                    </section>
 
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3 class="intro">Interactive Shader Example</h3>
+                    <br>
+                    <h3 class="intro">j5_shader/app.js</h3>
+                    <br>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+            </section>
+            </section>
+                             
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
