@@ -45,41 +45,98 @@
             <section>
                 <ul>
                     <h3>Topics for This Week:</h3>
-                    <li class="fragment">Joystick with P5.js</li>
+                    <li class="fragment">Remote Conrol</li>
+                    <li class="fragment">Sensors</li>
                     <li class="fragment">The Johnny Five Library</li>
                     <li class="fragment">Creating a Twitter Lamp</li>
                     <li class="fragment">Create and Twitter Button</li>
-                    <li class="fragment">Using a Liquid Crystal Display</li>
                 </ul>
             </section>
             <section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1Cp7aD0q63g" frameborder="0" allowfullscreen></iframe>
+                <p>Remote Control</p>
+                <img src="img/irremote.jpg" height="600">
             </section>
             <section>
-                <img src="img/joystick.png">
+                <p>Hook Up the IR reciever</p>
+                <img src="img/irreceiver.jpg" height="600">
             </section>
             <section>
-                <h4>Connections</h4>
-                <p>GND -> GND</p>
-                <p>5V -> 5V</p>
-                <p>Vrx -> A1</p>
-                <p>Vry -> A0</p>
-                <p>SW -> 2</p>
+                <p>Connect the WS2812's</p>
+                <img src="img/irws.png" height="600">
             </section>
             <section>
-                <p>Upload joystick with arduino</p>
+                <ul>
+                    <h3>Lets Install the IRL remote Library</h3>
+                    <li><a href="https://github.com/NicoHood/IRLremote/archive/master.zip">Download IRLremote</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <h3>Remove -master from the end of the filename and place in Documents/Arduino/Library</h3>
+                </ul>
+            </section>
+            <section>
+                <p>Upload Receive_Custom_neo.ino</p>
             </section>
 
             <section>
-                <p>cd 'joystick_p5js' && npm install && node app.js && localhost:3000 in the browser</p>
+                <img src="img/hc04.jpeg" </section>
+            </section>
+            <section>
+                <p>The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. From 2cm to 400 cm or 1” to 13
+                    feet. It operation is not affected by sunlight or black material like Sharp rangefinders are (although acoustically soft materials like cloth can be difficult to detect). It comes complete with ultrasonic transmitter and receiver module.</p>
+            </section>
+            <section>
+                <img src="img/schematics.png">
+            </section>
+            <section>
+                <p>Upload the Arduino sketch in hc-04-code/hc-04 and then check the output in the serial monitor</p>
+            </section>
+            <section>
+                <p>Open hc04_p5js in a text editor and the terminal. Change the port. NPM install. Make slight change to Arduino code. Node app.js and open localhost:3000 in your browser</p>
+            </section>
+            <section>
+                <p>ADXL354 accelerometer</p>
+                <img src="img/accel.png">
             </section>
 
-
+            <section>
+                <p>An accelerometer is an electromechanical device that will measure acceleration forces. These forces may be static, like the constant force of gravity pulling at your feet, or they could be dynamic - caused by moving or vibrating the accelerometer.By
+                    measuring the amount of static acceleration due to gravity, you can find out the angle the device is tilted at with respect to the earth. By sensing the amount of dynamic acceleration, you can analyze the way the device is moving.
+                </p>
+            </section>
+            <section>
+                <p>ADXL354 accelerometer</p>
+                <img src="img/adxl345.png" height="400">
+            </section>
+            <section>
+                <ul>
+                    <li>Connect</li>
+                    <li>GND to GND</li>
+                    <li>3v to 3v</li>
+                    <li>SCL to A5</li>
+                    <li>SDA to A4</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Open the Library Manager in Arduino</li>
+                    <li>Install Adafruit ADXL Library</li>
+                    <li>Run Sensortest from the Examples</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>From arduino upload ADXL345sensortestMod</li>
+                    <li>cd serial_ws_accel & open in text editor</li>
+                    <li>Edit port setting on line 8 of index.js</li>
+                    <li>NPM install & node index.js & open localhost:3000</li>
+                </ul>
+            </section>
             <section data-background="img/johnny-five-fb.png" data-background-transition="zoom">
 
             </section>
             <section data-background="img/sc_poster.jpg" data-background-size="600px" data-background-transition="zoom">
-
             </section>
 
             <section>
@@ -102,6 +159,7 @@
                     <li class="fragment">drag your folder to the terminal and hit return</li>
                 </ul>
             </section>
+
             <section>
 
                 <ul>
@@ -217,9 +275,6 @@ led.pulse({
                 <h2 class="intro">'node app.js'</h2>
             </section>
 
-
-
-            </section>
 
             <section>
                 <section>
