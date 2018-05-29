@@ -9,6 +9,7 @@
   "author": "Mark Hellar",
   "license": "ISC",
   "dependencies": {
+    "johnny-five": "^0.15.0",
     "weather-js": "^1.0.2"
   }
 }

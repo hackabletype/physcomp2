@@ -1,12 +1,6 @@
 //import weather-js
 var weather = require('weather-js');
 
-//The child process lib allows us to execute command line options
-var exec = require('child_process').exec;
-
-//This variable stores the command we want to execute
-var say = 'say ';
-
 //create new J5 board and LCD
 var five = require("johnny-five"),
   board, lcd;
@@ -44,8 +38,7 @@ function getWeather(){
   console.log(location);
   console.log(temp);
 
-  //Speak the results and print them on the LCD
-  exec(say + "Current Temperature in San Francisco " + temp);
+  //Print the results on the LCD
   lcd.cursor(0, 0).print(location);
   lcd.cursor(1, 0).print(temp);
 });

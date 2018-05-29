@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "bart": "0.0.3",
-    
+    "johnny-five": "^0.15.0"
   }
 }
