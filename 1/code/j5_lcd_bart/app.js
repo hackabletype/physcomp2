@@ -1,7 +1,4 @@
-//the child_process library let's us execute command line commands, https://nodejs.org/api/child_process.html
-var exec = require('child_process').exec;
-//This variable stores the command we want to execute, we are going to use the say command
-var say = 'say ';
+
 
 //create a bart oobject that queries the API every 5 seconds, use npm install bart to install
 var bart = require('bart').createClient({"interval":20000});
@@ -24,14 +21,6 @@ board.on("ready", function() {
     cols: 16
   });
 
-//let's make a function that speaks
-function speak(whatosay){
-  //speak the string
-  exec(say + whatosay);
-  //log it to the console
-  console.log(whatosay)
-}
-
 function queryBart(){
 //choose which bart staion to to monitor, station abbreviations are here: http://api.bart.gov/docs/overview/abbrev.aspx
 bart.on('powl', function(estimates){
@@ -45,7 +34,6 @@ bart.on('powl', function(estimates){
    lcd.cursor(0, 0).clear().print(nextTrain + "M");
    lcd.cursor(1, 0).print("Dest: " + estimates[0].destination);
    // call the function
-   speak(nextTrain + " minutes" + " destination is " + estimates[0].destination);
    }, 1000);
 })
 }
