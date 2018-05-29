@@ -45,38 +45,12 @@
             <section>
                 <ul>
                     <h3>Topics for This Week:</h3>
-                    <li class="fragment">Remote Conrol</li>
-                    <li class="fragment">Sensors</li>
+                    <li class="fragment">Serial Port Module Revisited</li>
                     <li class="fragment">The Johnny Five Library</li>
                     <li class="fragment">Creating a Twitter Lamp</li>
                     <li class="fragment">Create and Twitter Button</li>
+                    <li class="fragment">API to LCD</li>
                 </ul>
-            </section>
-            <section>
-                <p>Remote Control</p>
-                <img src="img/irremote.jpg" height="600">
-            </section>
-            <section>
-                <p>Hook Up the IR reciever</p>
-                <img src="img/irreceiver.jpg" height="600">
-            </section>
-            <section>
-                <p>Connect the WS2812's</p>
-                <img src="img/irws.png" height="600">
-            </section>
-            <section>
-                <ul>
-                    <h3>Lets Install the IRL remote Library</h3>
-                    <li><a href="https://github.com/NicoHood/IRLremote/archive/master.zip">Download IRLremote</a></li>
-                </ul>
-            </section>
-            <section>
-                <ul>
-                    <h3>Remove -master from the end of the filename and place in Documents/Arduino/Library</h3>
-                </ul>
-            </section>
-            <section>
-                <p>Upload Receive_Custom_neo.ino</p>
             </section>
 
             <section>
@@ -122,17 +96,39 @@
                 <ul>
                     <li>Open the Library Manager in Arduino</li>
                     <li>Install Adafruit ADXL Library</li>
+                    <li>Install Adafruit Universal Sensor Library</li>
+                    <li>Install ArduinoJSON Library</li>
                     <li>Run Sensortest from the Examples</li>
                 </ul>
             </section>
             <section>
                 <ul>
-                    <li>From arduino upload ADXL345sensortestMod</li>
-                    <li>cd serial_ws_accel & open in text editor</li>
+                    <li>Before gloing further lets a take looks at Arduino JSON </li>
+                    <li>Upload JsonGeneratorExample</li>
+                    <li>Open the serial monitor at 9600 BAUD</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>From arduino upload adxl345_json_serial.ino</li>
+                    <li>This adds ArduinoJSON to the Sensortest</li>
+                    <li>cd adxl_threejs_serial & open in text editor</li>
                     <li>Edit port setting on line 8 of index.js</li>
                     <li>NPM install & node index.js & open localhost:3000</li>
                 </ul>
             </section>
+            <section>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/js/js_json_parse.asp">Json.parse()</a></li>
+                    </ul>
+                </section>
+            <section>
+                    <ul>
+                        <li>cd adxl_threejs_serial_shader & open in text editor</li>
+                        <li>Edit port setting on line 8 of index.js</li>
+                        <li>NPM install & node index.js & open localhost:3000</li>
+                    </ul>
+                </section>
             <section>
                 <ul>
                     <li>Places to get sensors:</li>
@@ -225,7 +221,7 @@ board.on("ready", function() {
             </section>
             <section>
                 <ul>
-                    <li>Upload firmata to arduino</li>
+                    <li>!!! Upload firmata to arduino !!!</li>
                     <li class="fragment">run 'node index.js' at the terminal</li>
                 </ul>
             </section>
@@ -261,7 +257,7 @@ led.pulse({
 });
 });
 </pre>
-                        </code>
+</code>
             </section>
 
             <section>
@@ -365,26 +361,6 @@ var client = new Twitter({
                     <a href="https://www.arduino.cc/en/Tutorial/HelloWorld">Detailed Reference</a>
                     <a href="#" class="navigate-down">
                     </a>
-                </section>
-                <section>
-                    <h3>Unplug your Arduino from USB</h3><br>
-                    <h3>Hook up according to the diagram</h3><br>
-                    <h3>Call out if you need help!</h3>
-                </section>
-                <section>
-                    <h3>Arduino Examples:</h3>
-                </section>
-                <section>
-                    <h3>code7/HelloWorld/HelloWorld.ino
-                </section>
-                <section>
-                    <h3>code7/Display/Display.ino
-                </section>
-                <section>
-                    <h3>code7/SerialDisplay/SerialDisplay.ino
-                </section>
-                <section>
-                    <a href="https://www.arduino.cc/en/Reference/LiquidCrystal">Arduino Liquid Crystal Display Library</a>
                 </section>
                 <section>
                     <h3>Johnny Five Examples</h3>
