@@ -38,29 +38,20 @@
             </section>
 
             <section data-background="img/72-points-mesh.svg" data-background-transition="zoom">
-                <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/3</b></p>
+                <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/1</b></p>
                 <br>
-                <p><b>Grab the code here: <br><a href="http://bit.ly/2zP5PId">http://bit.ly/2zP5PId</a></b></p>
+                <p><b>Grab the code here: <br><a href="https://bit.ly/2sfx2Bm">https://bit.ly/2sfx2Bm</a></b></p>
             </section>
-
-
             <section>
                 <ul>
-                    <h3>Topics for Today:</h3>
-                    <li class="fragment">Johnny-Five..</li>
+                    <h3>Topics for This Week:</h3>
+                    <li class="fragment">The Johnny Five Library</li>
+                    <li class="fragment">Creating a Twitter Lamp</li>
+                    <li class="fragment">Create and Twitter Button</li>
+                    <li class="fragment">API to LCD</li>
                     <li class="fragment">Fritzing</li>
-                    <li class="fragment">Twitter Lamp</li>
-                    <li class="fragment">Twitter Button</li>
-                    <li class="fragment">Introduction to the ESP8266</li>
-                    <li class="fragment">Project Planning Break out</li>
                 </ul>
             </section>
-            <section data-background="img/johnny-five-fb.png" data-background-transition="zoom">
-
-            </section>
-            <section data-background="img/sc_poster.jpg" data-background-size="600px" data-background-transition="zoom">
-            </section>
-
             <section>
                 <p>
                     Johnny-Five is the original JavaScript Robotics programming framework. Released by Bocoup in 2012, Johnny-Five is maintained by a community of passionate software developers and hardware engineers. Over 75 developers have made contributions towards building
@@ -102,76 +93,76 @@
             <section>
                 <b><p>contents of package.json</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
-                {
-                  "name": "J5_led_1",
-                  "version": "1.0.0",
-                  "description": "A Johnny Five LED app",
-                  "main": "index.js",
-                  "scripts": {
-                    "test": "echo \"Error: no test specified\" && exit 1"
-                  },
-                  "author": "",
-                  "license": "ISC",
-                  "dependencies": {
-                    "johnny-five": "^0.8.106"
-                  }
-                }
-                </pre>
-                                        </code>
+{
+  "name": "J5_led_1",
+  "version": "1.0.0",
+  "description": "A Johnny Five LED app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.8.106"
+  }
+}
+</pre>
+                        </code>
             </section>
 
             <section>
                 <h3>create a new file, enter the following code and save as index.js in your new folder</h3>
                 <code class="hljs" data-trim contenteditable><pre>
-                var five = require("johnny-five");
-                var board = new five.Board();
-                
-                board.on("ready", function() {
-                  var led = new five.Led(6);
-                  led.blink(500);
-                });
-                </pre>
-                                        </code>
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+  led.blink(500);
+});
+</pre>
+                        </code>
             </section>
             <section>
                 <ul>
-                    <li>Upload firmata to arduino</li>
+                    <li>!!! Upload firmata to arduino !!!</li>
                     <li class="fragment">run 'node index.js' at the terminal</li>
                 </ul>
             </section>
             <section>
                 <h3>try a pulse</h3>
                 <code class="hljs" data-trim contenteditable><pre>
-                var five = require("johnny-five");
-                var board = new five.Board();
-                
-                board.on("ready", function() {
-                  var led = new five.Led(6);
-                led.pulse(500);
-                });
-                </pre>
-                                        </code>
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+led.pulse(500);
+});
+</pre>
+                        </code>
             </section>
             <section>
                 <b><p>Led Animations</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
-                var five = require("johnny-five");
-                var board = new five.Board();
-                
-                board.on("ready", function() {
-                  var led = new five.Led(6);
-                led.pulse({
-                  easing: "linear",
-                  duration: 3000,
-                  cuePoints: [0, 0.2, 0.4, 0.6, 0.8, 1],
-                  keyFrames: [0, 10, 0, 50, 0, 255],
-                  onstop: function() {
-                    console.log("Animation stopped");
-                  }
-                });
-                });
-                </pre>
-                                        </code>
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+led.pulse({
+  easing: "linear",
+  duration: 3000,
+  cuePoints: [0, 0.2, 0.4, 0.6, 0.8, 1],
+  keyFrames: [0, 10, 0, 50, 0, 255],
+  onstop: function() {
+    console.log("Animation stopped");
+  }
+});
+});
+</pre>
+</code>
             </section>
 
             <section>
@@ -182,59 +173,29 @@
                 <a href="http://johnny-five.io/api/">Full API</a>
 
             </section>
-
+            
             <section>
-                <h4>Project 1</h4>
-                <p>Connect a servo</p>
-                <img src="img/servo.png" height="500">
-            </section>
-
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd j5SocketInputServo'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section>
-                <h3>Fritzing.org</h3>
-            </section>
-            <!-- <section>
-                <img src="img/step.png">
-            </section>
-            <section>
-                <h3>upload stepper1</h3>
-            </section>
-            <section>
-                <h3>upload stepper2</h3>
-            </section>
-            <section>
-                <a href="https://github.com/adafruit/AccelStepper">Install AccellStepper Library</a>
-            </section>
-            <section>
-                <h3>upload stepper3</h3>
-            </section> -->
-            <section>
-                <h3>Project: Twitter Lamp</h3>
-                <img src="img/Twitter_logo_blue.png" height="400"><img src="img/botrobot.jpg" height="400">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Make this circuit</h3>
-                <img src="img/led_1.png" height="400">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Go Here:</h3><br>
-                <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>
-                <img src="img/twit.png" height="400"><br>
-                <h3>create a new app</h3>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Gather tokens and keys</h3><br>
-                <img src="img/tw_tokens.png" height="400"><br>
-            </section>
-            <section>
-                <b><p>Update code in code/twitter-ard/app.js</p></b></br>
-                <code class="hljs" data-trim contenteditable><pre>
+                <section>
+                    <h3>Project: Twitter Lamp</h3>
+                    <img src="img/Twitter_logo_blue.png" height="400"><img src="img/botrobot.jpg" height="400">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Make this circuit</h3>
+                    <img src="img/led_1.png" height="400">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Go Here:</h3><br>
+                    <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>
+                    <img src="img/twit.png" height="400"><br>
+                    <h3>create a new app</h3>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Gather tokens and keys</h3><br>
+                    <img src="img/tw_tokens.png" height="400"><br>
+                </section>
+                <section>
+                    <b><p>Update code in code/twitter-ard/app.js</p></b></br>
+                    <code class="hljs" data-trim contenteditable><pre>
 var client = new Twitter({
     consumer_key: 'Enter Here',
     consumer_secret: 'Enter Here',
@@ -243,43 +204,44 @@ var client = new Twitter({
 })
 </pre>
                         </code>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-ard'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section data-background="img/terminal.gif" data-background-size="1200px">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-ard-location'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section>
-                <p>Twitter API Reference</i>
-                </p>
-                <br>
-                <a href="https://dev.twitter.com/streaming/overview/request-parameters#language">Here</a>
-                <br>
-            </section>
-
-            <section>
-                <h3>Project: Twitter Button</h3>
-                <img src="img/internet_earth.png" height="400"><img src="img/Push-Button-Switch.jpg" height="400">
-                <a href="#" class="navigate-down">
-                </a>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-ard'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
+                <section data-background="img/terminal.gif" data-background-size="1200px">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-ard-location'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
+                <section>
+                    <p>Twitter API Reference</i>
+                    </p>
+                    <br>
+                    <a href="https://dev.twitter.com/streaming/overview/request-parameters#language">Here</a>
+                    <br>
+                </section>
             </section>
             <section>
-                <img src="img/button.png" height="600">
-            </section>
-            <section>
-                <b><p>Update code in code/twitter-ard/app.js</p></b></br>
-                <code class="hljs" data-trim contenteditable><pre>
+                <section>
+                    <h3>Project: Twitter Button</h3>
+                    <img src="img/internet_earth.png" height="400"><img src="img/Push-Button-Switch.jpg" height="400">
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <img src="img/button.png" height="600">
+                </section>
+                <section>
+                    <b><p>Update code in code/twitter-ard/app.js</p></b></br>
+                    <code class="hljs" data-trim contenteditable><pre>
 var client = new Twitter({
     consumer_key: 'Enter Here',
     consumer_secret: 'Enter Here',
@@ -288,89 +250,42 @@ var client = new Twitter({
 })
 </pre>
                         </code>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-button'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section>
-                <p>The ESP8266</p>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-button'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
             </section>
             <section>
-                <p>We need to solder the header pins on, let's do that now</p>
-            </section>
-            <section data-background="img/feather.jpg">
-            </section>
-            <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
-            </section>
-            <section>
-                <p>The Adafruit Feather is a mini Arduino with Wifi, that is $16.00!</p>
-                <br>
-            </section>
-            <section>
-                <p>
-                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs serial driver</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next go to the Arduino Preferences
-                    <br><img src="img/ard-pref.png" height="400">
-                    <br> Enter <b>http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> into Additional Boards Manager URLs
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next, use the Board manager to install the ESP8266 package.
-                    <br><img src="img/brdmgr.png" height="400">
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> Set Board to Adafruit HUZZAH ESP8266
-                    <br> Set port to SLABusbtoUART
-                </p>
+                <section>
+                    <h3>Let's hook up the Liquid Crystal Display</h3>
+                    <img src="img/LCD_Base.png" height="400"><br>
+                    <a href="https://www.arduino.cc/en/Tutorial/HelloWorld">Detailed Reference</a>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <h3>Johnny Five Examples</h3>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <h3>Upload Firmata to Arduino</h3>
+                </section>
+                <section>
+                    <h3>code7/j5_lcd_weather</h3><br>
+                    <h3>node app.js</h3>
+                </section>
+                <section>
+                    <h3>code7/j5_lcd_bart</h3><br>
+                    <h3>node app.js</h3>
+                </section>
             </section>
 
-            <section>
-                <p>Connect an led</p>
-                <br>
-                <img src="img/mqled.png">
-            </section>
-            <section>
-                <p>Upload Blink</p>
-                <br>
-            </section>
-            <section>
-                <p>Upload WiFiWebServer</p>
-                <br>
-            </section>
-            <section>
-                <p>Upload ESPwebpage</p>
-                <br>
-            </section>
-            <section>
-                <p>Hook Up A Servo</p>
-                <br>
-                <img src="img/servoesp.png">
-            </section>
-            <section>
-                <p>Upload ESPwebpageServo</p>
-                <br>
-            </section>
+
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
