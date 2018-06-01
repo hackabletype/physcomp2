@@ -1,133 +1,132 @@
-./1/code/hc-04-code/hc04_p5js/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/arr-swap/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/clone-deep/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/engine.io/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/engine.io-client/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/has-binary/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/is-accessor-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/is-data-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/is-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/mixin-object/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/mkdirp/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/object-copy/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/object-copy/node_modules/is-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/prompt-base/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/prompt-choices/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/prompt-question/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/raw-body/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/readline-ui/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/readline-utils/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/serialport/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/shallow-clone/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/socket.io/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/socket.io-adapter/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/socket.io-client/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/socket.io-parser/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/static-extend/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/static-extend/node_modules/is-data-descriptor/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/tar-fs/node_modules
-./1/code/hc-04-code/hc04_p5js/node_modules/window-size/node_modules
-./1/code/j5_lcd/node_modules
-./1/code/j5_lcd/node_modules/ansi-styles/node_modules
-./1/code/j5_lcd/node_modules/arr-swap/node_modules
-./1/code/j5_lcd/node_modules/choices-separator/node_modules
-./1/code/j5_lcd/node_modules/clone-deep/node_modules
-./1/code/j5_lcd/node_modules/firmata/node_modules
-./1/code/j5_lcd/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd/node_modules/mixin-object/node_modules
-./1/code/j5_lcd/node_modules/mkdirp/node_modules
-./1/code/j5_lcd/node_modules/object-copy/node_modules
-./1/code/j5_lcd/node_modules/object-copy/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd/node_modules/prompt-actions/node_modules
-./1/code/j5_lcd/node_modules/prompt-checkbox/node_modules
-./1/code/j5_lcd/node_modules/prompt-choices/node_modules
-./1/code/j5_lcd/node_modules/prompt-question/node_modules
-./1/code/j5_lcd/node_modules/prompt-radio/node_modules
-./1/code/j5_lcd/node_modules/readline-ui/node_modules
-./1/code/j5_lcd/node_modules/readline-utils/node_modules
-./1/code/j5_lcd/node_modules/shallow-clone/node_modules
-./1/code/j5_lcd/node_modules/static-extend/node_modules
-./1/code/j5_lcd/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd/node_modules/static-extend/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd/node_modules/tar-fs/node_modules
-./1/code/j5_lcd/node_modules/terminal-paginator/node_modules
-./1/code/j5_lcd/node_modules/window-size/node_modules
-./1/code/j5_lcd_bart/node_modules
-./1/code/j5_lcd_bart/node_modules/ansi-styles/node_modules
-./1/code/j5_lcd_bart/node_modules/arr-swap/node_modules
-./1/code/j5_lcd_bart/node_modules/choices-separator/node_modules
-./1/code/j5_lcd_bart/node_modules/clone-deep/node_modules
-./1/code/j5_lcd_bart/node_modules/firmata/node_modules
-./1/code/j5_lcd_bart/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/mixin-object/node_modules
-./1/code/j5_lcd_bart/node_modules/mkdirp/node_modules
-./1/code/j5_lcd_bart/node_modules/object-copy/node_modules
-./1/code/j5_lcd_bart/node_modules/object-copy/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/prompt-actions/node_modules
-./1/code/j5_lcd_bart/node_modules/prompt-checkbox/node_modules
-./1/code/j5_lcd_bart/node_modules/prompt-choices/node_modules
-./1/code/j5_lcd_bart/node_modules/prompt-question/node_modules
-./1/code/j5_lcd_bart/node_modules/prompt-radio/node_modules
-./1/code/j5_lcd_bart/node_modules/readline-ui/node_modules
-./1/code/j5_lcd_bart/node_modules/readline-utils/node_modules
-./1/code/j5_lcd_bart/node_modules/request/node_modules
-./1/code/j5_lcd_bart/node_modules/request/node_modules/form-data/node_modules
-./1/code/j5_lcd_bart/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules
-./1/code/j5_lcd_bart/node_modules/shallow-clone/node_modules
-./1/code/j5_lcd_bart/node_modules/static-extend/node_modules
-./1/code/j5_lcd_bart/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/static-extend/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd_bart/node_modules/tar-fs/node_modules
-./1/code/j5_lcd_bart/node_modules/terminal-paginator/node_modules
-./1/code/j5_lcd_bart/node_modules/window-size/node_modules
-./1/code/j5_lcd_bart/node_modules/xml2js/node_modules
-./1/code/j5_lcd_weather/node_modules
-./1/code/j5_lcd_weather/node_modules/ansi-styles/node_modules
-./1/code/j5_lcd_weather/node_modules/arr-swap/node_modules
-./1/code/j5_lcd_weather/node_modules/choices-separator/node_modules
-./1/code/j5_lcd_weather/node_modules/clone-deep/node_modules
-./1/code/j5_lcd_weather/node_modules/firmata/node_modules
-./1/code/j5_lcd_weather/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/mixin-object/node_modules
-./1/code/j5_lcd_weather/node_modules/mkdirp/node_modules
-./1/code/j5_lcd_weather/node_modules/object-copy/node_modules
-./1/code/j5_lcd_weather/node_modules/object-copy/node_modules/is-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/prompt-actions/node_modules
-./1/code/j5_lcd_weather/node_modules/prompt-checkbox/node_modules
-./1/code/j5_lcd_weather/node_modules/prompt-choices/node_modules
-./1/code/j5_lcd_weather/node_modules/prompt-question/node_modules
-./1/code/j5_lcd_weather/node_modules/prompt-radio/node_modules
-./1/code/j5_lcd_weather/node_modules/readline-ui/node_modules
-./1/code/j5_lcd_weather/node_modules/readline-utils/node_modules
-./1/code/j5_lcd_weather/node_modules/shallow-clone/node_modules
-./1/code/j5_lcd_weather/node_modules/static-extend/node_modules
-./1/code/j5_lcd_weather/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/static-extend/node_modules/is-data-descriptor/node_modules
-./1/code/j5_lcd_weather/node_modules/tar-fs/node_modules
-./1/code/j5_lcd_weather/node_modules/terminal-paginator/node_modules
-./1/code/j5_lcd_weather/node_modules/window-size/node_modules
-./1 copy/code/websocket_simple/node_modules
-./1 copy/code/websocket_simple/node_modules/engine.io-parser/node_modules
-./1 copy/code/websocket_simple/node_modules/socket.io-adapter/node_modules
-./1 copy/code/websocket_simple/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules
-./1 copy/code/websocket_simple/node_modules/socket.io-client/node_modules
-./1 copy/code/websocket_simple/node_modules/socket.io-parser/node_modules
-./3/code_physcomp3/websocket_simple/node_modules
-./3/code_physcomp3/websocket_simple/node_modules/engine.io-parser/node_modules
-./3/code_physcomp3/websocket_simple/node_modules/socket.io-adapter/node_modules
-./3/code_physcomp3/websocket_simple/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules
-./3/code_physcomp3/websocket_simple/node_modules/socket.io-client/node_modules
-./3/code_physcomp3/websocket_simple/node_modules/socket.io-parser/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules/engine.io-parser/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules/socket.io-adapter/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules/socket.io-adapter/node_modules/socket.io-parser/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules/socket.io-client/node_modules
-./3_copy/code_physcomp3/websocket_simple/node_modules/socket.io-parser/node_modules
+
+# Created by https://www.gitignore.io/api/node,macos,sublimetext,visualstudiocode
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs generated by jscoverage/JSCover
+lib-cov
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Typescript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+
+# End of https://www.gitignore.io/api/node,macos,sublimetext,visualstudiocode
