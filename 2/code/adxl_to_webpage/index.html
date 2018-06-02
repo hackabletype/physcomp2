@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Serial Connect</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/three.min.js"></script>
+    <script>
+        let x, y, z, mx, my, mz;
+
+        function map(num, in_min, in_max, out_min, out_max) {
+            return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+        }
+
+        var socket = io.connect('//localhost:3000');
+
+        socket.on('data', function(data) {
+            let incoming = JSON.parse(data);
+            // console.log(incoming);
+            x = incoming.x;
+            y = incoming.y;
+            z = incoming.z;
+            $('#incoming').text(incoming.sensor + " x:" + incoming.x + " y:" + incoming.y + " z:" + incoming.z);
+            console.log(incoming.sensor + " x:" + incoming.x + " y:" + incoming.y + " z:" + incoming.z);
+
+            //mapped values
+            mx = map(parseInt(x), -10, 10, -1, 1);
+            my = map(parseInt(y), -10, 10, -1, 1);
+            mz = map(parseInt(z), -10, 10, -1, 1);
+
+        });
+        socket.on('error', function() {
+            console.error(arguments)
+        });
+    </script>
+
+    		<style>
+			body {
+				color: #808080;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+
+				background-color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+			}
+
+			a {
+
+				color: #0080ff;
+			}
+
+		</style>
+</head>
+
+<body>
+
+    <h1 id="incoming"></h1>
+    <div id="container"></div>
+
+
+
+</body>
+
+</html>
