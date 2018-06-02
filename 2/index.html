@@ -38,6 +38,7 @@
             </section>
 
             <section data-background="img/72-points-mesh.svg" data-background-transition="zoom">
+<<<<<<< HEAD
                 <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/3</b></p>
                 <br>
                 <p><b>Grab the code here: <br><a href="http://bit.ly/2zP5PId">http://bit.ly/2zP5PId</a></b></p>
@@ -61,6 +62,22 @@
             <section data-background="img/sc_poster.jpg" data-background-size="600px" data-background-transition="zoom">
             </section>
 
+=======
+                <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/1</b></p>
+                <br>
+                <p><b>Grab the code here: <br><a href="https://bit.ly/2J4OTRD">https://bit.ly/2J4OTRD</a></b></p>
+            </section>
+            <section>
+                <ul>
+                    <h3>Topics for This Week:</h3>
+                    <li class="fragment">The Johnny Five Library</li>
+                    <li class="fragment">Creating a Twitter Lamp</li>
+                    <li class="fragment">Create and Twitter Button</li>
+                    <li class="fragment">API to LCD</li>
+                    <li class="fragment">Fritzing</li>
+                </ul>
+            </section>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
             <section>
                 <p>
                     Johnny-Five is the original JavaScript Robotics programming framework. Released by Bocoup in 2012, Johnny-Five is maintained by a community of passionate software developers and hardware engineers. Over 75 developers have made contributions towards building
@@ -68,7 +85,11 @@
                 </p>
             </section>
 
+<<<<<<< HEAD
             <section data-background="img/led_1.png" data-background-size="1000px" data-background-transition="zoom">
+=======
+            <section data-background="img/led_1.png" data-background-size="500px" data-background-transition="zoom">
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
 
             </section>
 
@@ -102,6 +123,7 @@
             <section>
                 <b><p>contents of package.json</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
+<<<<<<< HEAD
                 {
                   "name": "J5_led_1",
                   "version": "1.0.0",
@@ -118,11 +140,30 @@
                 }
                 </pre>
                                         </code>
+=======
+{
+  "name": "J5_led_1",
+  "version": "1.0.0",
+  "description": "A Johnny Five LED app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^0.8.106"
+  }
+}
+</pre>
+                        </code>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
             </section>
 
             <section>
                 <h3>create a new file, enter the following code and save as index.js in your new folder</h3>
                 <code class="hljs" data-trim contenteditable><pre>
+<<<<<<< HEAD
                 var five = require("johnny-five");
                 var board = new five.Board();
                 
@@ -136,12 +177,35 @@
             <section>
                 <ul>
                     <li>Upload firmata to arduino</li>
+=======
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+  led.blink(500);
+});
+</pre>
+                        </code>
+            </section>
+
+            <section>
+                <ul>
+                    <li>!!! Upload firmata to arduino !!!</li>
+                    <li class="fragment"><a href="https://github.com/firmata/protocol">Firmata Protocol</a></li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>!!! Upload firmata to arduino !!!</li>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
                     <li class="fragment">run 'node index.js' at the terminal</li>
                 </ul>
             </section>
             <section>
                 <h3>try a pulse</h3>
                 <code class="hljs" data-trim contenteditable><pre>
+<<<<<<< HEAD
                 var five = require("johnny-five");
                 var board = new five.Board();
                 
@@ -151,10 +215,22 @@
                 });
                 </pre>
                                         </code>
+=======
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+led.pulse(500);
+});
+</pre>
+                        </code>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
             </section>
             <section>
                 <b><p>Led Animations</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
+<<<<<<< HEAD
                 var five = require("johnny-five");
                 var board = new five.Board();
                 
@@ -172,6 +248,25 @@
                 });
                 </pre>
                                         </code>
+=======
+var five = require("johnny-five");
+var board = new five.Board();
+
+board.on("ready", function() {
+  var led = new five.Led(6);
+led.pulse({
+  easing: "linear",
+  duration: 3000,
+  cuePoints: [0, 0.2, 0.4, 0.6, 0.8, 1],
+  keyFrames: [0, 10, 0, 50, 0, 255],
+  onstop: function() {
+    console.log("Animation stopped");
+  }
+});
+});
+</pre>
+</code>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
             </section>
 
             <section>
@@ -184,6 +279,7 @@
             </section>
 
             <section>
+<<<<<<< HEAD
                 <h4>Project 1</h4>
                 <p>Connect a servo</p>
                 <img src="img/servo.png" height="500">
@@ -235,6 +331,29 @@
             <section>
                 <b><p>Update code in code/twitter-ard/app.js</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
+=======
+                <section>
+                    <h3>Project: Twitter Lamp</h3>
+                    <img src="img/Twitter_logo_blue.png" height="400"><img src="img/botrobot.jpg" height="400">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Make this circuit</h3>
+                    <img src="img/led_1.png" height="400">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Go Here:</h3><br>
+                    <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>
+                    <img src="img/twit.png" height="400"><br>
+                    <h3>create a new app</h3>
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h3>Gather tokens and keys</h3><br>
+                    <img src="img/tw_tokens.png" height="400"><br>
+                </section>
+                <section>
+                    <b><p>Update code in code/twitter-ard/app.js</p></b></br>
+                    <code class="hljs" data-trim contenteditable><pre>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
 var client = new Twitter({
     consumer_key: 'Enter Here',
     consumer_secret: 'Enter Here',
@@ -243,6 +362,7 @@ var client = new Twitter({
 })
 </pre>
                         </code>
+<<<<<<< HEAD
             </section>
             <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
                 <h2 class="intro">From the terminal:</h2>
@@ -280,6 +400,46 @@ var client = new Twitter({
             <section>
                 <b><p>Update code in code/twitter-ard/app.js</p></b></br>
                 <code class="hljs" data-trim contenteditable><pre>
+=======
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-ard'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
+                <section data-background="img/terminal.gif" data-background-size="1200px">
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-ard-location'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
+                <section>
+                    <p>Twitter API Reference</i>
+                    </p>
+                    <br>
+                    <a href="https://dev.twitter.com/streaming/overview/request-parameters#language">Here</a>
+                    <br>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Project: Twitter Button</h3>
+                    <img src="img/internet_earth.png" height="400"><img src="img/Push-Button-Switch.jpg" height="400">
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <img src="img/button-pullup.png" height="600">
+                </section>
+                <section>
+                    <b><p>Update code in code/twitter-ard/app.js</p></b></br>
+                    <code class="hljs" data-trim contenteditable><pre>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
 var client = new Twitter({
     consumer_key: 'Enter Here',
     consumer_secret: 'Enter Here',
@@ -288,6 +448,7 @@ var client = new Twitter({
 })
 </pre>
                         </code>
+<<<<<<< HEAD
             </section>
             <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
                 <h2 class="intro">From the terminal:</h2>
@@ -371,6 +532,91 @@ var client = new Twitter({
                 <p>Upload ESPwebpageServo</p>
                 <br>
             </section>
+=======
+                </section>
+                <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
+                    <h2 class="intro">From the terminal:</h2>
+                    <br>
+                    <h2 class="intro">'cd twitter-button'</h2>
+                    <br>
+                    <h2 class="intro">'node app.js'</h2>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Let's hook up the Liquid Crystal Display</h3>
+                    <img src="img/LCD_Base.png" height="400"><br>
+                    <a href="https://www.arduino.cc/en/Tutorial/HelloWorld">Detailed Reference</a>
+                    <a href="#" class="navigate-down">
+                    </a>
+                </section>
+                <section>
+                    <h3>Upload Firmata to Arduino</h3>
+                </section>
+                <section>
+                    <h3>code7/j5_lcd_weather</h3><br>
+                    <h3>node app.js</h3>
+                </section>
+                <section>
+                    <h3>code7/j5_lcd_bart</h3><br>
+                    <h3>node app.js</h3>
+                </section>
+            </section>
+            <section>
+                <a href="https://github.com/ajfisher/node-pixel">
+                    <h1>node-pixel</h1>
+                </a>
+            </section>
+            <section>
+                <p>Connect GND, 5V, DI to pin 3</p>
+                <img src="img/neo.png" height="600">
+            </section>
+            <section>
+                <p>Node-pixel only works with Node LTS version</p>
+                <br>
+                <p>sudo n lts</p>
+            </section>
+            <section>
+                <p>Node-pixel needs a special version for Firmata</p>
+                <br>
+                <p>git clone https://github.com/ajfisher/node-pixel</p>
+            </section>
+            <section>
+                <p>Upload node_pixel_firmata.ino from the repo you just cloned</p>
+                <img src="img/np-firmata.png" height="600">
+            </section>
+            <section>
+                <ul>
+                    <li>cd j5pixel from the code folder</li>
+                    <li class="fragment">npm install</li>
+                    <li class="fragment">node app.js</li>
+                    <li class="fragment">also try rainbow.js</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>cd PhysicalNeopixel from the code folder</li>
+                    <li class="fragment">npm install</li>
+                    <li class="fragment">node panel.js</li>
+                    <li class="fragment">open localhost:3000</li>
+                </ul>
+            </section>
+            <section>
+                <p>Reference</i>
+                </p>
+                <br>
+                <a href=" https://github.com/ajfisher/node-pixel">node-pixel</a>
+                <br>
+
+            </section>
+
+
+
+
+
+
+
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>

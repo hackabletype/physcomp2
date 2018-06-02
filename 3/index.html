@@ -40,6 +40,7 @@
             <section data-background="img/72-points-mesh.svg" data-background-transition="zoom">
                 <p><b>Slides are here: <br>http://mhellar.github.io/physcomp2/3</b></p>
                 <br>
+<<<<<<< HEAD
                 <p><b>Grab the code here: <br><a href="http://bit.ly/2s6rk1T">http://bit.ly/2s6rk1T</a></b></p>
             </section>
 
@@ -239,6 +240,235 @@ var client = new Twitter({
 </section>
 
 
+=======
+                <p><b>Grab the code here: <br><a href="https://bit.ly/2s6rk1T">https://bit.ly/2s6rk1T</a></b></p>
+            </section>
+
+            <section>
+                <ul>
+                    <h3>Topics for Today:</h3>
+                    <li class="fragment">Workshop</li>
+                    <li class="fragment">Fritzing</li>
+                    <li class="fragment">Soldering excercise</li>
+                    <li class="fragment">Introduction to the ESP32</li>
+                    <li class="fragment">the MQTT Protocol</li>
+                </ul>
+            </section>
+            <section>
+                <li>Let start with a workshop for about 1:30</li>
+                <li class="fragment">There is some template code in the code folder</li>
+                <li class="fragment">Or try a new program from the Johnny-Five examples: http://johnny-five.io/api/</li>
+           </section>
+           <section>
+            <li>Ideas</li>
+            <li class="fragment">Combine the accelerometer with Web audio</li>
+            <li class="fragment">Make a VR controller for aframe</li>
+            <li class="fragment">Try your hand at threejs and make it interactive</li>
+            <li class="fragment">Light and causual, we will come around and answer questions</li>
+       </section>
+       <section>
+        <section>
+            <img src="img/joystick.png">
+        </section>
+        <section>
+            <h4>Connections</h4>
+            <p>GND -> GND</p>
+            <p>5V -> 5V</p>
+            <p>Vrx -> A1</p>
+            <p>Vry -> A0</p>
+            <p>SW -> 2</p>
+        </section>
+        <section>
+            <p>Upload joystick with arduino</p>
+        </section>
+        <section>
+            <p>cd 'joystick_p5js' && npm install && node app.js && localhost:3000 in the browser</p>
+        </section>
+        <section>
+            <p>We will use the smoothiecharts library to plot the joystick data</p>
+            <p><a href="http://smoothiecharts.org/">smoothiecharts.org</a></p>
+        </section>
+        <section>
+            <p>Open 'serial_ws_joystick_chart' in your text editor. On line 8 of index.js set the serial port to your serial port</p>
+        </section>
+        <section>
+            <p>cd 'serial_ws_joystick_chart' && npm install && node app.js && localhost:3000 in the browser</p>
+        </section>
+        <section>
+            <p>Use the builder to style the chart</p>
+            <p><a href="http://smoothiecharts.org/builder/">smoothiecharts.org Builder</a></p>
+        </section>
+        <section>
+            <p>An accelerometer is an electromechanical device that will measure acceleration forces. These forces may be static, like the constant force of gravity pulling at your feet, or they could be dynamic - caused by moving or vibrating the accelerometer.By
+                measuring the amount of static acceleration due to gravity, you can find out the angle the device is tilted at with respect to the earth. By sensing the amount of dynamic acceleration, you can analyze the way the device is moving.
+            </p>
+        </section>
+        <section>
+            <p>ADXL354 accelerometer</p>
+            <img src="img/adxl345.png" height="400">
+        </section>
+        <section>
+            <ul>
+                <li>Connect</li>
+                <li>GND to GND</li>
+                <li>3v to 3v</li>
+                <li>SCL to A5</li>
+                <li>SDA to A4</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Open the Library Manager in Arduino</li>
+                <li>Install Adafruit ADXL Library</li>
+                <li>Install Adafruit Universal Sensor Library</li>
+                <li>Install ArduinoJSON Library</li>
+                <li>Run Sensortest from the Examples</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Before going further lets a take looks at Arduino JSON</li>
+                <li>Upload JsonGeneratorExample</li>
+                <li>Open the serial monitor at 9600 BAUD</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>From arduino upload adxl345_json_serial.ino</li>
+                <li>This adds ArduinoJSON to the Sensortest</li>
+                <li>cd adxl_threejs_serial & open in text editor</li>
+                <li>Edit port setting on line 8 of index.js</li>
+                <li>NPM install & node index.js & open localhost:3000</li>
+            </ul>
+        </section>
+
+       </section>
+
+            <section>
+                <h3>Fritzing.org</h3>
+            </section>
+            <section>
+            <li>Introduction to the esp32</li>
+        </ul>
+    </section>
+    <section>
+        <p>The ESP32</p>
+        <img src="img/esp32.jpg" height="400">
+    </section>
+    <section>
+        <p>ESP32 Pinout</p>
+        <img src="img/esp32pinout.jpg" height="400">
+    </section>
+    <section>
+        <p>Install This Driver</p>
+        <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">Here</a>
+    </section>
+    <section>
+        <p>Install for you platform</p>
+        <a href="https://github.com/espressif/arduino-esp32">Here</a>
+    </section>
+    <section>
+        <a href="https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/mac.md">Instructions for Mac</a>
+    </section>
+    <section>
+        <p>Connect an LED, Anode to pin 12 w/resistor, Cathode to GND</p>
+        <img src="img/esp32led.png" height="400">
+    </section>
+    <section>
+        <p>In Arduino set the board to Adafruit ESP32 Feather</p>
+    </section>
+    <section>
+        <p>Upload esp32/blink</p>
+    </section>
+    <section>
+        <p>Connect your laptop to the Gray Area Incubator</p>
+        <p>password: grandstand</p>
+    </section>
+    <section>
+        <p>Upload esp32/SimpleWiFiServer</p>
+        <p>Once uploaded open the serial monitor at to 115200 baud</p>
+        <p>Hit the reset button on the ESP32, it will connect to wifi and display an IP address go to this address in the browser</p>
+    </section>
+    <section>
+        <p>OSC on the ESP32: Install the OSC library</p>
+        <img src="img/osclib.png">
+    </section>
+    <section>
+        <p>Open ESP8266Send Message</p>
+        <img src="img/oscsend32.png">
+    </section>
+    <section>
+        <p>Edit Lines 18-23, set the wifi and your computers IP address</p>
+        <img src="img/oscsendsettings.png">
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/OSC in you terminal</p>
+        <p>npm install & node index.js</p>
+    </section>
+    <section>
+        <p>Connect the accelerometer:</p>
+        <img src="img/adxl32.png" height="400">
+    </section>
+    <section>
+        <p>Open esp32/adxl345_osc Message</p>
+        <p>Edit Lines 18-23, set the wifi and your computers IP address</p>
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/OSC in your terminal</p>
+        <p>node index.js</p>
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/adxl_threejs_osc in you terminal</p>
+        <p>npm install & node index.js & open localhost:3000</p>
+    </section>
+    <section>
+        <br>
+        <img src="img/mqttorg.png">
+        <br>
+    </section>
+    <section>
+        <br>
+        <img src="img/mqtt-explanation.png">
+        <br>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>sudo npm install mqtt -g</p>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>sudo npm install mosca bunyan -g</p>
+        <p>mosca -v | bunyan</p>
+    </section>
+    <section>
+        <p>Open a second terminal</p>
+        <p>mqtt sub -t '/hello' -h 'localhost'</p>
+    </section>
+    <section>
+        <p>Open a third terminal</p>
+        <p>mqtt pub -t '/hello' -h 'localhost' -m 'hi from me'</p>
+    </section>
+    <section>
+        <p>Open a third terminal</p>
+        <p>mqtt pub -t '/hello' -h 'localhost' -m 'My message'</p>
+    </section>
+    <section>
+        <p>In Arduino install the PubSubClient Library</p>
+    </section>
+    <section>
+        <p>Connect some touch Pins</p>
+        <img src="img/espTouch.png" height="400">
+    </section>
+    <section>
+        <p>Upload esp32/ESP32TouchInterruptMQTT.ino</p>
+        <p>Set the Wifi to Gray Area Incubator and grandstand</p>
+        <p>Set the MQTT server to your IP address</p>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>mqtt sub -t '/hello' -h 'localhost'</p>
+    </section>
+>>>>>>> 6a7bd66c79ee9ea4ba1a9bedf93f95b5c411cbfc
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
