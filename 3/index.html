@@ -43,202 +43,229 @@
                 <p><b>Grab the code here: <br><a href="http://bit.ly/2s6rk1T">http://bit.ly/2s6rk1T</a></b></p>
             </section>
 
-
             <section>
                 <ul>
                     <h3>Topics for Today:</h3>
-                    <li class="fragment">Projects</li>
+                    <li class="fragment">Workshop</li>
                     <li class="fragment">Fritzing</li>
-                    <li class="fragment">Twitter Lamp</li>
-                    <li class="fragment">Twitter Button</li>
-                    <li class="fragment">Introduction to the ESP8266</li>
+                    <li class="fragment">Soldering excercise</li>
+                    <li class="fragment">Introduction to the ESP32</li>
+                    <li class="fragment">the MQTT Protocol</li>
                 </ul>
             </section>
-            <!-- <section>
-                <img src="img/urls.png">
-            </section> -->
+            <section>
+                <li>Let start with a workshop for about 1:30</li>
+                <li class="fragment">There is some template code in the code folder</li>
+                <li class="fragment">Or try a new program from the Johnny-Five examples: http://johnny-five.io/api/</li>
+           </section>
+           <section>
+            <li>Ideas</li>
+            <li class="fragment">Combine the accelerometer with Web audio</li>
+            <li class="fragment">Make a VR controller for aframe</li>
+            <li class="fragment">Try your hand at threejs and make it interactive</li>
+       </section>
+       <section>
+        <section>
+            <img src="img/joystick.png">
+        </section>
+        <section>
+            <h4>Connections</h4>
+            <p>GND -> GND</p>
+            <p>5V -> 5V</p>
+            <p>Vrx -> A1</p>
+            <p>Vry -> A0</p>
+            <p>SW -> 2</p>
+        </section>
+        <section>
+            <p>Upload joystick with arduino</p>
+        </section>
+        <section>
+            <p>cd 'joystick_p5js' && npm install && node app.js && localhost:3000 in the browser</p>
+        </section>
+        <section>
+            <p>We will use the smoothiecharts library to plot the joystick data</p>
+            <p><a href="http://smoothiecharts.org/">smoothiecharts.org</a></p>
+        </section>
+        <section>
+            <p>Open 'serial_ws_joystick_chart' in your text editor. On line 8 of index.js set the serial port to your serial port</p>
+        </section>
+        <section>
+            <p>cd 'serial_ws_joystick_chart' && npm install && node app.js && localhost:3000 in the browser</p>
+        </section>
+        <section>
+            <p>Use the builder to style the chart</p>
+            <p><a href="http://smoothiecharts.org/builder/">smoothiecharts.org Builder</a></p>
+        </section>
+        <section>
+            <p>An accelerometer is an electromechanical device that will measure acceleration forces. These forces may be static, like the constant force of gravity pulling at your feet, or they could be dynamic - caused by moving or vibrating the accelerometer.By
+                measuring the amount of static acceleration due to gravity, you can find out the angle the device is tilted at with respect to the earth. By sensing the amount of dynamic acceleration, you can analyze the way the device is moving.
+            </p>
+        </section>
+        <section>
+            <p>ADXL354 accelerometer</p>
+            <img src="img/adxl345.png" height="400">
+        </section>
+        <section>
+            <ul>
+                <li>Connect</li>
+                <li>GND to GND</li>
+                <li>3v to 3v</li>
+                <li>SCL to A5</li>
+                <li>SDA to A4</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Open the Library Manager in Arduino</li>
+                <li>Install Adafruit ADXL Library</li>
+                <li>Install Adafruit Universal Sensor Library</li>
+                <li>Install ArduinoJSON Library</li>
+                <li>Run Sensortest from the Examples</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Before going further lets a take looks at Arduino JSON</li>
+                <li>Upload JsonGeneratorExample</li>
+                <li>Open the serial monitor at 9600 BAUD</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>From arduino upload adxl345_json_serial.ino</li>
+                <li>This adds ArduinoJSON to the Sensortest</li>
+                <li>cd adxl_threejs_serial & open in text editor</li>
+                <li>Edit port setting on line 8 of index.js</li>
+                <li>NPM install & node index.js & open localhost:3000</li>
+            </ul>
+        </section>
+
+       </section>
+
             <section>
                 <h3>Fritzing.org</h3>
             </section>
-            <!-- <section>
-                <img src="img/step.png">
-            </section>
             <section>
-                <h3>upload stepper1</h3>
-            </section>
-            <section>
-                <h3>upload stepper2</h3>
-            </section>
-            <section>
-                <a href="https://github.com/adafruit/AccelStepper">Install AccellStepper Library</a>
-            </section>
-            <section>
-                <h3>upload stepper3</h3>
-            </section> -->
-            <section>
-                <h3>Project: Twitter Lamp</h3>
-                <img src="img/Twitter_logo_blue.png" height="400"><img src="img/botrobot.jpg" height="400">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Make this circuit</h3>
-                <img src="img/led_1.png" height="400">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Go Here:</h3><br>
-                <a href="https://apps.twitter.com/">https://apps.twitter.com/</a>
-                <img src="img/twit.png" height="400"><br>
-                <h3>create a new app</h3>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h3>Gather tokens and keys</h3><br>
-                <img src="img/tw_tokens.png" height="400"><br>
-            </section>
-            <section>
-                <b><p>Update code in code/twitter-ard/app.js</p></b></br>
-                <code class="hljs" data-trim contenteditable><pre>
-var client = new Twitter({
-    consumer_key: 'Enter Here',
-    consumer_secret: 'Enter Here',
-    access_token_key: 'Enter Here',
-    access_token_secret: 'Enter Here'
-})
-</pre>
-                        </code>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-ard'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section data-background="img/terminal.gif" data-background-size="1200px">
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-ard-location'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section>
-                <p>Twitter API Reference</i>
-                </p>
-                <br>
-                <a href="https://dev.twitter.com/streaming/overview/request-parameters#language">Here</a>
-                <br>
-            </section>
-
-            <section>
-                <h3>Project: Twitter Button</h3>
-                <img src="img/internet_earth.png" height="400"><img src="img/Push-Button-Switch.jpg" height="400">
-                <a href="#" class="navigate-down">
-                </a>
-            </section>
-            <section>
-                <img src="img/button.png" height="600">
-            </section>
-            <section>
-                <b><p>Update code in code/twitter-ard/app.js</p></b></br>
-                <code class="hljs" data-trim contenteditable><pre>
-var client = new Twitter({
-    consumer_key: 'Enter Here',
-    consumer_secret: 'Enter Here',
-    access_token_key: 'Enter Here',
-    access_token_secret: 'Enter Here'
-})
-</pre>
-                        </code>
-            </section>
-            <section data-background="img/72-points-mesh.svg" data-background-repeat="repeat" data-background-size="100px" data-background-transition="zoom">
-                <h2 class="intro">From the terminal:</h2>
-                <br>
-                <h2 class="intro">'cd twitter-button'</h2>
-                <br>
-                <h2 class="intro">'node app.js'</h2>
-            </section>
-            <section>
-                <p>The ESP8266</p>
-            </section>
-            <section>
-                <p>We need to solder the header pins on, let's do that now</p>
-            </section>
-            <section data-background="img/feather.jpg">
-            </section>
-            <section>
-                <p>The ESP8266 is a low-cost Wi-Fi chip with full TCP/IP stack and MCU (Micro Controller Unit) capability produced by Shanghai-based Chinese manufacturer, Espressif Systems.</p>
-            </section>
-            <section>
-                <p>The Adafruit Feather is a mini Arduino with Wifi, that is $16.00!</p>
-                <br>
-            </section>
-            <section>
-                <p>
-                    <a="https://github.com/esp8266/Arduino">ESP8266 core for Arduino</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - First install the USB driver <a href="https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx">SiLabs serial driver</a>
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next go to the Arduino Preferences
-                    <br><img src="img/ard-pref.png" height="400">
-                    <br> Enter <b>http://arduino.esp8266.com/stable/package_esp8266com_index.json</b> into Additional Boards Manager URLs
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> - Next, use the Board manager to install the ESP8266 package.
-                    <br><img src="img/brdmgr.png" height="400">
-                </p>
-            </section>
-            <section>
-                <p>
-                    Getting Set up:
-                    <br> Set Board to Adafruit HUZZAH ESP8266
-                    <br> Set port to SLABusbtoUART
-                </p>
-            </section>
-
-            <section>
-                <p>Connect an led</p>
-                <br>
-                <img src="img/mqled.png" height="400">
-                <p>Anode to Pin 2, Cathode to GND</p>
-            </section>
-            <section>
-                <p>Upload Blink</p>
-                <br>
-            </section>
-            <section>
-                <p>Upload WiFiWebServer</p>
-                <br>
-            </section>
-            <section>
-                <p>Upload ESPwebpage</p>
-                <br>
-            </section>
-            <section>
-                <p>Hook Up A Servo</p>
-                <br>
-                <img src="img/servoesp1.png" height="400">
-                <p>Black to GND, Red to Bat, Yellow to pin 5</p>
-            </section>
-            <section>
-                <p>Upload ESPwebpageServo</p>
-                <br>
-            </section>
-            <section>
-                <a href=" https://github.com/kitesurfer1404/WS2812FX">WS2812FX</p>
-</section>
-
-
+            <li>Introduction to the esp32</li>
+        </ul>
+    </section>
+    <section>
+        <p>The ESP32</p>
+        <img src="img/esp32.jpg" height="400">
+    </section>
+    <section>
+        <p>ESP32 Pinout</p>
+        <img src="img/esp32pinout.jpg" height="400">
+    </section>
+    <section>
+        <p>Install This Driver</p>
+        <a href="https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers">Here</a>
+    </section>
+    <section>
+        <p>Install for you platform</p>
+        <a href="https://github.com/espressif/arduino-esp32">Here</a>
+    </section>
+    <section>
+        <a href="https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/mac.md">Instructions for Mac</a>
+    </section>
+    <section>
+        <p>Connect an LED, Anode to pin 12 w/resistor, Cathode to GND</p>
+        <img src="img/esp32led.png" height="400">
+    </section>
+    <section>
+        <p>In Arduino set the board to Adafruit ESP32 Feather</p>
+    </section>
+    <section>
+        <p>Upload esp32/blink</p>
+    </section>
+    <section>
+        <p>Connect your laptop to the Gray Area Incubator</p>
+        <p>password: grandstand</p>
+    </section>
+    <section>
+        <p>Upload esp32/SimpleWiFiServer</p>
+        <p>Once uploaded open the serial monitor at to 115200 baud</p>
+        <p>Hit the reset button on the ESP32, it will connect to wifi and display an IP address go to this address in the browser</p>
+    </section>
+    <section>
+        <p>OSC on the ESP32: Install the OSC library</p>
+        <img src="img/osclib.png">
+    </section>
+    <section>
+        <p>Open ESP8266Send Message</p>
+        <img src="img/oscsend32.png">
+    </section>
+    <section>
+        <p>Edit Lines 18-23, set the wifi and your computers IP address</p>
+        <img src="img/oscsendsettings.png">
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/OSC in you terminal</p>
+        <p>npm install & node index.js</p>
+    </section>
+    <section>
+        <p>Connect the accelerometer:</p>
+        <img src="img/adxl32.png" height="400">
+    </section>
+    <section>
+        <p>Open esp32/adxl345_osc Message</p>
+        <p>Edit Lines 18-23, set the wifi and your computers IP address</p>
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/OSC in your terminal</p>
+        <p>node index.js</p>
+    </section>
+    <section>
+        <p>Open the NodeJS program, esp32/adxl_threejs_osc in you terminal</p>
+        <p>npm install & node index.js & open localhost:3000</p>
+    </section>
+    <section>
+        <br>
+        <img src="img/mqttorg.png">
+        <br>
+    </section>
+    <section>
+        <br>
+        <img src="img/mqtt-explanation.png">
+        <br>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>sudo npm install mqtt -g</p>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>sudo npm install mosca bunyan -g</p>
+        <p>mosca -v | bunyan</p>
+    </section>
+    <section>
+        <p>Open a second terminal</p>
+        <p>mqtt sub -t '/hello' -h 'localhost'</p>
+    </section>
+    <section>
+        <p>Open a third terminal</p>
+        <p>mqtt pub -t '/hello' -h 'localhost' -m 'hi from me'</p>
+    </section>
+    <section>
+        <p>Open a third terminal</p>
+        <p>mqtt pub -t '/hello' -h 'localhost' -m 'My message'</p>
+    </section>
+    <section>
+        <p>In Arduino install the PubSubClient Library</p>
+    </section>
+    <section>
+        <p>Connect some touch Pins</p>
+        <img src="img/espTouch.png" height="400">
+    </section>
+    <section>
+        <p>Upload esp32/ESP32TouchInterruptMQTT.ino</p>
+        <p>Set the Wifi to Gray Area Incubator and grandstand</p>
+        <p>Set the MQTT server to your IP address</p>
+    </section>
+    <section>
+        <p>Open a terminal</p>
+        <p>mqtt sub -t '/hello' -h 'localhost'</p>
+    </section>
         </div>
     </div>
     <script src="lib/js/head.min.js"></script>
